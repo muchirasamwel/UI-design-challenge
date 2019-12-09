@@ -8943,10 +8943,20 @@ input {
   padding: 0px !important;
 }
 .carous .img1 .main-text {
-  text-align: center;
-  margin-top: 220px !important;
+  text-align: start;
+  margin: 0px;
+  padding-left: 4px;
+  text-space: 1px;
+  margin-top: 5px !important;
   font-weight: bolder;
   font-size: 1.3em;
+  text-shadow: 2px 1px 3px black;
+}
+.carous .img1 .mini-text {
+  font-weight: bold;
+  margin: 0px;
+  padding: 4px;
+  margin-top: 180px !important;
   text-shadow: 2px 1px 3px black;
 }
 .carous .img1 .inner-div:hover {
@@ -8964,10 +8974,20 @@ input {
   padding: 0px !important;
 }
 .carous .img2 .main-text {
-  text-align: center;
-  margin-top: 220px !important;
+  text-align: start;
+  margin: 0px;
+  padding-left: 4px;
+  text-space: 1px;
+  margin-top: 5px !important;
   font-weight: bolder;
   font-size: 1.3em;
+  text-shadow: 2px 1px 3px black;
+}
+.carous .img2 .mini-text {
+  font-weight: bold;
+  margin: 0px;
+  padding: 4px;
+  margin-top: 180px !important;
   text-shadow: 2px 1px 3px black;
 }
 .carous .img2 .inner-div:hover {
@@ -8985,10 +9005,20 @@ input {
   padding: 0px !important;
 }
 .carous .img3 .main-text {
-  text-align: center;
-  margin-top: 220px !important;
+  text-align: start;
+  margin: 0px;
+  padding-left: 4px;
+  text-space: 1px;
+  margin-top: 5px !important;
   font-weight: bolder;
   font-size: 1.3em;
+  text-shadow: 2px 1px 3px black;
+}
+.carous .img3 .mini-text {
+  font-weight: bold;
+  margin: 0px;
+  padding: 4px;
+  margin-top: 180px !important;
   text-shadow: 2px 1px 3px black;
 }
 .carous .img3 .inner-div:hover {

@@ -11,6 +11,7 @@ $pcolor2:#f78f12;
 $pcolor3:#2bc2eb;
 $pcolor4:#ddca62;
 $pcolor5:#ececec;
+
 @mixin backgroudimg{
     background-size: cover;
     background-position: center;
@@ -19,12 +20,23 @@ $pcolor5:#ececec;
     padding: 0px !important;
 
     .main-text{
-        text-align: center;
-        margin-top: 220px !important;
+        text-align: start;
+        margin: 0px;
+        padding-left: 4px;
+        text-space: 1px;
+        margin-top: 5px !important;
         font-weight: bolder;
         font-size: 1.3em;
         text-shadow: 2px 1px 3px black;
     }
+    .mini-text{
+        font-weight: bold;
+        margin: 0px;
+        padding:4px;
+        margin-top: 180px !important;
+        text-shadow: 2px 1px 3px black;
+    }
+
     & .inner-div:hover
     {
         background-color: computeOpacity(white,.1)!important;
