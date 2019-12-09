@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/design":{"create":true,"guestpath":"/home/vagrant/design","hostpath":"/Users/bmuchira/Documents/myprojects/design_challenge/design","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/bmuchira/Documents/myprojects/design_challenge","disabled":false,"__vagrantfile":true}}}

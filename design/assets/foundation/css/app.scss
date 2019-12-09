@@ -1,0 +1,221 @@
+@import "foundation";
+@function computeOpacity($co, $opp) {
+    @return rgba($color: $co, $alpha: $opp);
+}
+$wcolor1 : white;
+$bcolor1 : black;
+$wcolor2 : #f6f6f6;
+
+$pcolor1:#a1d160;
+$pcolor2:#f78f12;
+$pcolor3:#2bc2eb;
+$pcolor4:#ddca62;
+$pcolor5:#ececec;
+@mixin backgroudimg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px !important;
+    padding: 0px !important;
+
+    .main-text{
+        text-align: center;
+        margin-top: 220px !important;
+        font-weight: bolder;
+        font-size: 1.3em;
+        text-shadow: 2px 1px 3px black;
+    }
+    & .inner-div:hover
+    {
+        background-color: computeOpacity(white,.1)!important;
+    }
+
+}
+.topics
+{
+    padding-top: 10px;
+}
+.divider{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    padding-top: 0 !important;
+}
+@mixin textdarker {
+    label {
+        color: $bcolor1;
+        font-weight: bold;
+    }
+}
+
+body {
+    background-color: $wcolor1;
+}
+
+.top-bar-left{
+   // background-color: red;
+}
+
+
+input {
+    border-radius: 5px !important;
+    border: 3px $bcolor1 !important;
+}
+
+.top-bar {
+    box-shadow: 0px 2px 5px $bcolor1 !important;
+    background-color: $bcolor1;
+    input {
+        border-radius: 5px !important;
+        border: 1px solid $wcolor1 !important;
+        background-color: $bcolor1;
+    }
+    li{
+        color: $wcolor1;
+    }
+    .menu {
+        background-color: black;
+    }
+    a{
+        color: $wcolor1 !important;
+    }
+    .top-bar-right{
+         a:hover {
+            font-weight: bold;
+            color: $wcolor1;
+        }
+    }
+
+}
+.menu-text
+{
+    a{
+        font-size: 2em;
+        color: $wcolor1 !important;
+        font-weight: bolder;
+    }
+    a:hover{
+        color: red !important;
+        //text-shadow: 0px 0px 4px white;
+    }
+}
+
+
+.carous{
+    overflow: hidden;
+    border: 2px solid $wcolor1;
+    margin: 0px !important;
+    padding: 0px;
+    margin-bottom: 20px !important;
+    height: 300px;
+    .img1{
+        background-image: url(../../images/image1.jpg);
+        @include backgroudimg;
+        .inner-div{
+            background-color: computeOpacity(orange,.5);
+        }
+
+    }
+    .img2{
+        background-image: url(../../images/bootcamp.jpg);
+        @include backgroudimg;
+        .inner-div{
+            background-color: computeOpacity(blue,.5);
+        }
+    }
+    .img3{
+        background-image: url(../../images/reading.png);
+        @include backgroudimg;
+        .inner-div{
+            background-color: computeOpacity(green,.5);
+        }
+    }
+    div{
+        height: inherit;
+        color: $wcolor1!important;
+        overflow: hidden;
+    }
+}
+.fa-chevron-right{
+    margin-right: 10px;
+    margin-top:3px;
+}
+.card{
+
+    box-shadow: 1px -1px 3px black !important;
+    .card-divider{
+        font-weight: bold;
+        background-color: $wcolor1;
+        padding-bottom: 0px !important;
+        padding-top: 2px !important;
+    }
+    .sec1{
+        border-bottom: 4px solid $pcolor1;
+    }
+    .sec2{
+        border-bottom: 4px solid $pcolor2;
+    }
+    .sec3{
+        border-bottom: 4px solid $pcolor3;
+    }
+}
+.wheat{
+    background-color: $wcolor2;
+    margin-bottom: 20px;
+
+}
+.advert{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.my-card{
+    //box-shadow: 1px -1px 3px black !important;
+    .card-divider{
+        font-weight: bold;
+        background-color: $wcolor1;
+    }
+    margin-bottom: 10px;
+    border-bottom: 1px solid $bcolor1;
+    //height: 200px;
+    overflow: hidden;
+    .card-author{
+        margin-bottom: 5px;
+    }
+}
+.articles{
+    margin-bottom: 10px;
+    border-top: 2px solid #d0d0d0;
+    padding-top: 10px;
+}
+.article{
+    padding : 5px;
+    margin-bottom: 10px;
+    background-color: $wcolor2;
+    img{
+        padding: 10px;
+    }
+}
+.article-head{
+    padding-left: 3px !important;
+    font-weight: bold;
+}
+.article-author{
+    color: $pcolor4;
+    padding-left: 3px !important;
+}
+.news1{
+    color: $pcolor4;
+    margin-bottom: 2px;
+}
+.news2{
+    color: $pcolor3;
+}
+.news3{
+    color: $pcolor2;
+}
+.view-more-btn
+{
+    color: $bcolor1;
+    width: 100%;
+    background-color:$pcolor5;
+}
